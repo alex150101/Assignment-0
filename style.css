@@ -1,0 +1,244 @@
+
+h1 { /* home page css for profile picture*/
+    font-family: 'Lobster', cursive;
+} 
+/* this gives the headings the front */
+
+.item {
+   text-align: 200px;
+   border-radius: 200%;
+   height: 240px;
+   width: 240px;
+}
+/*this make the image appear in the middle of the page*/
+img {
+    border-style: none;
+    border-radius: 100%;
+    filter: grayscale(0);
+}
+/*this does give the image a filter */
+.container:hover{
+    filter: grayscale(1);
+    border-style: none;
+    border-radius: 100%;
+    transition: background-size 0.3s ease;
+    filter: grayscale(1);
+    transition: background-size 0.3s ease; 
+}
+/*this make it so that when you hover over the image turn it grayscale*/
+ body {
+     text-align: center;
+     background-color: whitesmoke;
+ }
+/*the controls the background as it can change the different colour of the background */
+ * { /*navigation bar css*/
+    margin: 0;
+    padding: 0;
+  }
+  /*this make the navigation bar appear on the to the web page */ 
+  nav {
+    margin:0px;
+  }
+  /*the makes sure the navgation bar is at the top of the page*/
+  ul {
+    overflow: auto;
+    list-style-type: none;
+  }
+  /*this controls where the text is going to be in the navigation bar*/
+  li {
+    height: 25px;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid 
+   #aaa;
+    padding: 0 100px;
+    text-align: 200px;
+  }
+  /*this controls where the text placed in the navigation bar*/
+ 
+  li:last-child {
+    border-right: none;
+  }
+ 
+  li a {
+    text-decoration: none;
+    color: #666;
+    font: 25px/1 Helvetica, Verdana, sans-serif;
+    text-transform: lowercase;
+    transition: all 0.5s ease;
+  }
+  /*this makes that the text on navigation bar a certain size and front*/
+ 
+  li a:hover {
+    color: #666;
+  }
+  /*this makes the taxt a different colour when it is hovered over with*/ 
+
+  li.active a {
+    font-weight: bold;
+    color: #333 2111;
+  }
+  /*the make the text bold when the page is selected*/
+
+  * { /*grid css*/
+    margin:0;
+    padding:0;
+    }
+  /*this make the gallery appear on the to the web page */ 
+    :root {
+      font-size: 75.5%;
+      font-family: Montserrat, sans-serif;
+    }
+    /*this sets the size for the heading text*/
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 400;
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      color: #3974b79d;
+    }
+    /* this gives the headings the front */
+    hr {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    /*this gives the gallery a border from the title*/
+    .container {
+      width: 96rem;
+      margin: 2rem auto;
+    }
+    /*this decides where gallery is in the web page*/
+    .gallery-item {
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      transition: all .3s;
+      overflow: hidden;
+      position: relative;
+    }
+    /*this is how the gallary is laid on the web page*/
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1.5rem;
+      grid-auto-rows: minmax(150px, auto);
+    }
+    /*this serperates the images in gallery*/
+    .image { 
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      object-fit: cover;
+    }
+    /*this decides how the image shown in  the gallary*/
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    /*this decides how the text appears on the images */
+    .gallery-item:hover .image {
+      filter: grayscale(1);
+    }
+    /*this gives the image a filter when it is hovered over*/
+    .gallery-item:hover .middle {
+      opacity: 1;
+    }
+    /*this says there can only be one text per grid*/
+    .gallery-item:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    }
+    /*this gives the image a box shadow when it is hovered over*/
+    .text {
+      color: white;
+      font-size: 2.5em;
+        padding: 16px 32px;
+        font-family: Oswald, sans-serif;
+    }
+    /*this makes that the text on the grid gallery a certain size, colour and front*/
+    @media (max-width: 500px) { 
+      .gallery-item,body {
+        max-width: 30%;
+        grid-column: 2;
+        font-family: Oswald, sans-serif;
+        text-align: left;
+      }
+      
+      div.container, h1 {
+        text-align: left;
+        margin-left: 2em;
+      }
+    
+      div.text {
+        font-size: 2.5em;
+      }
+    }
+    /* this is allows us to change the appearence on different media*/
+    * { /*icons css*/
+      margin:0;
+      padding:0;
+      }      
+      /*this make the icons appear on the to the web page */ 
+      hr{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      /*this decides where gallery is in the web page*/
+      .container {
+        width: 96rem;
+        margin: 2rem auto;
+      }
+       /*this gives the icons a border from the picture*/
+      
+      .gallery-item1 {
+        max-width: 10%;
+        border-radius: 5px;
+        transition: all .4s;
+        overflow: hidden;
+        position: relative;
+      }
+      /*this is how the gallary is laid on the web page*/
+      .gallery1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+        grid-gap: 0.1rem;
+        grid-auto-rows: minmax(15px, auto);
+      }
+      /*this serperates the images in gallery*/
+      .item {
+        text-align: 200px;
+       border-radius: 200%;
+       height: 240px;
+        width: 240px;
+      }
+      /*this make the image appear in the middle of the page*/
+      img {
+        border-style: none;
+        border-radius: 100%;
+        filter: grayscale(0);
+      }
+      /*this dose not give the image a filter */
+       .gallery-item1:hover{
+      filter: grayscale(1);
+      border-style: none;
+      border-radius: 100%;
+      transition: background-size 0.3s ease;
+      filter: grayscale(1);
+      transition: background-size 0.3s ease; 
+      }
+      /*this make it so that when you hover over the image turn it grayscale*/
+      .gallery-item1:hover .image {
+        filter: grayscale(1);
+      }
+        /*this gives the image a filter when it is hovered over*/
